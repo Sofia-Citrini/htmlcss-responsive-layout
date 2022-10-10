@@ -1,0 +1,40 @@
+:root {
+    --color-primary: #0084FD;
+    --color-primary-light: #B5DDFF;
+    --color-secondary: #9792E4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 50px;
+}
+
+header {
+    background-color: var(--color-primary);
+    padding: 1rem 0;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.row {
+    display: flex;
+}
+
+header .row {
+    justify-content: space-between;
+}
+
+.nav-logo img{
+    height: 100%;
+    display: block;
+}
+
+.nav-menu svg {
+    filter: invert();
+}
