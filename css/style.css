@@ -16,18 +16,47 @@ header {
     padding: 1rem 0;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+footer {
+    background-color: #333333;
+}
+
 .container {
     width: 100%;
     margin: 0 auto;
     padding: 0 2rem;
 }
 
-.row {
-    display: flex;
+.bg-secondary {
+    background-color: var(--color-secondary);
 }
 
-header .row {
-    justify-content: space-between;
+.pad-x-3 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -.5rem;
+}
+
+.center {
+    justify-content: center;
+}
+
+.col-100 {
+    flex-basis: 100%;
 }
 
 .nav-logo img{
@@ -38,3 +67,19 @@ header .row {
 .nav-menu svg {
     filter: invert();
 }
+
+.card {
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    background-color: var(--color-primary-light);
+}
+
+.card-secondary {
+    background-color: var(--color-secondary);
+}
+
+.card-standard {
+    background-color: white;
+    color: var(--color-secondary);
+}
+
