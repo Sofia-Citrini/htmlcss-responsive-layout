@@ -8,7 +8,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    min-height: 50px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif
 }
 
 header {
@@ -48,7 +51,6 @@ footer {
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -.5rem;
 }
 
 .center {
@@ -57,10 +59,39 @@ footer {
 
 .col-100 {
     flex-basis: 100%;
+    padding: 0 .5rem .5rem 1rem;
+}
+
+button {
+    border-radius: 20px;
+    border: none;
+    padding: .2rem;
+}
+
+.btn-white {
+    display: none;
+    background-color: white;
+    color: black;
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: white;
+    margin: 1rem 0;
+    padding: .5rem 2rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* navbar */
+.nav-logo {
+    width: 90px;
 }
 
 .nav-logo img{
-    height: 100%;
+    width: 100%;
     display: block;
 }
 
@@ -68,10 +99,24 @@ footer {
     filter: invert();
 }
 
+.nav-menu ul {
+    list-style: none;
+    display: none;
+}
+
+.nav-menu ul a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 0 .7rem;
+    line-height: 50px;
+}
+
+/* main: section */
 .card {
     border-radius: 20px;
-    margin-bottom: 1rem;
     background-color: var(--color-primary-light);
+    padding: 1.5rem 1rem;
 }
 
 .card-secondary {
@@ -83,3 +128,23 @@ footer {
     color: var(--color-secondary);
 }
 
+.icon-title {
+    display: block;
+    font-size: 4rem;
+    color: var(--color-primary);
+}
+
+.card h3 {
+    color: var(--color-primary);
+    line-height: 50px;
+}
+
+.card p {
+    color: #5A6E7F;
+    line-height: 1.5rem;
+}
+
+.phone-img {
+    width: 90%;
+    display: block;
+}
