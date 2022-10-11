@@ -98,6 +98,12 @@ button {
     padding: .5rem 2rem;
 }
 
+.btn-secondary {
+    background-color: var(--color-secondary);
+    padding: .5rem 2rem;
+    color: white;
+}
+
 .btn-circle {
     background-color: var(--color-secondary);
     color: black;
@@ -147,6 +153,10 @@ button {
 }
 
 /* section */
+.demo-card {
+    padding:1.5rem 1.5rem 0;
+}
+
 .icon-title {
     display: block;
     font-size: 4rem;
@@ -189,7 +199,12 @@ button {
 
 .testimonial-box {
     color: white;
-    padding: 2rem;
+    padding-top: 2rem;
+}
+
+.testimonial-box .card:nth-child(2) {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 .circle-box img {
@@ -202,4 +217,20 @@ button {
 .testimonial-text p{
     color: white;
     padding: 2rem 0;
+}
+
+.number-title {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+
+.benefits-text {
+    padding: 1rem 0;
+    color: #5A6E7F;
+}
+
+.white-title {
+    font-size: 2rem;
+    color: white;
+    padding-bottom: 2rem;
 }
