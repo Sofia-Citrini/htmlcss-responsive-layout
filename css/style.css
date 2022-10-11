@@ -14,14 +14,14 @@ body {
     font-family: Arial, Helvetica, sans-serif
 }
 
-header {
-    background-color: var(--color-primary);
-    padding: 1rem 0;
-}
-
 nav {
-    display: flex;
-    justify-content: space-between;
+    background-color: var(--color-primary);
+    padding: .5rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    margin-bottom: 50px;
 }
 
 section {
@@ -31,10 +31,12 @@ section {
 
 footer {
     background-color: #333333;
+    padding-top: 2rem;
 }
 
 h2 {
     font-size: 3rem;
+    color: var(--color-secondary);
 }
 
 p {
@@ -56,6 +58,15 @@ p {
     padding-right: 3rem;
 }
 
+.pad-2 {
+    padding: 2rem 0;
+}
+
+.pad-1 {
+    padding: 1rem 0;
+}
+
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -74,11 +85,25 @@ p {
     text-align: center;
 }
 
+.white-title {
+    font-size: 2rem;
+    color: white;
+}
+
+.white-text {
+    color: white;
+}
+
+.grey-text {
+    color: #5A6E7F;
+}
+
 .img-block {
     display: block;
     width: 100%;
 }
 
+/* PULSANTI */
 button {
     border-radius: 20px;
     border: none;
@@ -100,7 +125,7 @@ button {
 
 .btn-secondary {
     background-color: var(--color-secondary);
-    padding: .5rem 2rem;
+    padding: .5rem 1.5rem;
     color: white;
 }
 
@@ -114,29 +139,13 @@ button {
     margin-top: 2rem;
 }
 
-/* navbar */
-.nav-logo {
-    width: 90px;
+.btn-large {
+    color: var(--color-secondary);
+    padding: .7rem 3rem;
+    margin: 1.5rem;
 }
 
-.nav-menu svg {
-    filter: invert();
-}
-
-.nav-menu ul {
-    list-style: none;
-    display: none;
-}
-
-.nav-menu ul a {
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    padding: 0 .7rem;
-    line-height: 50px;
-}
-
-/* card */
+/* CARD */
 .card {
     border-radius: 20px;
     background-color: var(--color-primary-light);
@@ -152,9 +161,37 @@ button {
     color: var(--color-secondary);
 }
 
-/* section */
-.demo-card {
-    padding:1.5rem 1.5rem 0;
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-logo {
+    width: 90px;
+}
+
+.hamburger-menu {
+    font-size: 45px;
+    color: white;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: none;
+}
+
+.nav-menu ul a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 0 .7rem;
+    line-height: 50px;
+}
+
+/* SECTION */
+.jumbotron {
+    padding-top: 8rem;
 }
 
 .icon-title {
@@ -168,17 +205,8 @@ button {
     line-height: 50px;
 }
 
-.card p {
-    color: #5A6E7F;
-}
-
-.phone-img {
-    width: 90%;
-    display: block;
-}
-
+/* planning */
 .strategic-plan {
-    color: white;
     padding: 4rem 0 2rem;
 }
 
@@ -192,21 +220,7 @@ button {
     padding: 1rem 0;
 }
 
-.testimonial h2{
-    color: var(--color-secondary);
-    padding: 2rem;
-}
-
-.testimonial-box {
-    color: white;
-    padding-top: 2rem;
-}
-
-.testimonial-box .card:nth-child(2) {
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-}
-
+/* testimonials */
 .circle-box img {
     object-fit: cover;
     border-radius: 50%;
@@ -214,23 +228,49 @@ button {
     max-width: 150px;
 }
 
-.testimonial-text p{
-    color: white;
-    padding: 2rem 0;
+.testimonial-box .card:nth-child(2) {
+    margin: 1rem 0;
 }
 
+.testimonial-text {
+    text-align: center;
+}
+
+/* Benefits */
 .number-title {
     font-size: 3rem;
     padding-bottom: 1rem;
 }
 
-.benefits-text {
-    padding: 1rem 0;
-    color: #5A6E7F;
+/* about us */
+.about-us p{
+    line-height: 2rem;
 }
 
-.white-title {
-    font-size: 2rem;
-    color: white;
-    padding-bottom: 2rem;
+.linkedin h3 {
+    color: var(--color-secondary);
+    font-size: 1.3rem;
+}
+
+.quotation-icon {
+    color: var(--color-secondary);
+    font-size: 3rem;
+    position: relative;
+    bottom: -2.5rem;
+    left: 7rem;
+}
+
+/* Free */
+.free-title {
+    font-size: 5rem;
+    color: #FDC15F;
+}
+
+.subtitle{
+    color: #D5D4F4;
+    padding-bottom: 1rem;
+}
+
+footer a{
+    color: var(--color-secondary);
 }

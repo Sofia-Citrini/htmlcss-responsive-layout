@@ -19,6 +19,10 @@
     .col-md-3-4 {
         flex-basis: 75%;
     }
+
+    .testimonial-text {
+        text-align: inherit;
+    }
 }
 
 @media screen and (min-width:920px) {  
