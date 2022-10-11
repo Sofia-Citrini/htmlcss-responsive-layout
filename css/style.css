@@ -33,6 +33,10 @@ footer {
     background-color: #333333;
 }
 
+p {
+    line-height: 1.5rem;
+}
+
 .container {
     width: 100%;
     margin: 0 auto;
@@ -85,14 +89,14 @@ button {
     text-align: center;
 }
 
+.img-block {
+    display: block;
+    width: 100%;
+}
+
 /* navbar */
 .nav-logo {
     width: 90px;
-}
-
-.nav-logo img{
-    width: 100%;
-    display: block;
 }
 
 .nav-menu svg {
@@ -112,11 +116,11 @@ button {
     line-height: 50px;
 }
 
-/* main: section */
+/* card */
 .card {
     border-radius: 20px;
     background-color: var(--color-primary-light);
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 1.5rem;
 }
 
 .card-secondary {
@@ -128,23 +132,48 @@ button {
     color: var(--color-secondary);
 }
 
+/* section */
 .icon-title {
     display: block;
     font-size: 4rem;
     color: var(--color-primary);
 }
 
-.card h3 {
+.title-primary {
     color: var(--color-primary);
     line-height: 50px;
 }
 
 .card p {
     color: #5A6E7F;
-    line-height: 1.5rem;
 }
 
 .phone-img {
     width: 90%;
     display: block;
+}
+
+.strategic-plan {
+    color: white;
+    padding: 4rem 0 2rem;
+}
+
+.strategic-plan h3{
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+
+.developement-text h3 {
+    color: black;
+    padding: 1rem 0;
+}
+
+.btn-circle {
+    background-color: var(--color-secondary);
+    color: black;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    aspect-ratio: 1/1;
+    margin-top: 2rem;
 }
